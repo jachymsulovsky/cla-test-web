@@ -240,3 +240,9 @@
             .grid-2, .form-grid { grid-template-columns: 1fr; }
             .card { padding: 32px; }
         }
+        /* --- FIX PRO MOBILNÍ SCROLLOVÁNÍ --- */
+html, body {
+    overflow-x: hidden; /* Skryje horizontální posuvník, který dělá neplechu */
+    width: 100%;        /* Zajistí, že stránka nepřeteče přes displej */
+    position: relative;
+}
