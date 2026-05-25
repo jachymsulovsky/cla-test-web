@@ -64,6 +64,11 @@
     letter-spacing: -0.5px;
     white-space: nowrap;   /* Zabrání tomu, aby se text zalomil pod obrázek */
 }
+.logo img {
+    height: 60px;
+    width: auto;
+    margin-right: 15px;
+}
         .logo span { color: var(--secondary); }
 
         .nav-links { display: flex; gap: 32px; font-weight: 600; font-size: 15px; }
