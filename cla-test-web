@@ -55,12 +55,15 @@
 
         nav { display: flex; justify-content: space-between; align-items: center; }
 
-        .logo {
-            font-size: 28px;
-            font-weight: 800;
-            color: var(--primary);
-            letter-spacing: -0.5px;
-        }
+.logo {
+    display: flex;         /* Toto zarovná obrázek a text CLA vedle sebe */
+    align-items: center;   /* Toto je vycentruje vertikálně */
+    font-size: 24px;       /* Trochu jsem zmenšil, aby se to lépe vešlo */
+    font-weight: 800;
+    color: var(--primary);
+    letter-spacing: -0.5px;
+    white-space: nowrap;   /* Zabrání tomu, aby se text zalomil pod obrázek */
+}
         .logo span { color: var(--secondary); }
 
         .nav-links { display: flex; gap: 32px; font-weight: 600; font-size: 15px; }
@@ -81,7 +84,7 @@
 
         /* --- PREMIUM HERO SEKCE --- */
         .hero {
-            padding: 220px 0 160px;
+            padding: 280px 0 160px;
             background: linear-gradient(135deg, var(--bg-light) 0%, #e2f1f8 100%);
             text-align: center;
             position: relative;
@@ -247,14 +250,17 @@
     <header>
         <div class="container">
             <nav>
-                <div class="logo">CLA<span>.</span></div>
-                <ul class="nav-links">
-                    <li><a href="#sluzby">Služby</a></li>
-                    <li><a href="#cenik">Ceník</a></li>
-                    <li><a href="#kontakt">Kontakt</a></li>
-                </ul>
-                <a href="#kontakt" class="btn-primary">Napište nám</a>
-            </nav>
+    <div class="logo">
+        <img src="logo_CLA.png" alt="Logo">
+        CLA<span>.</span>
+    </div>
+    <ul class="nav-links">
+        <li><a href="#sluzby">Služby</a></li>
+        <li><a href="#cenik">Ceník</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+    <a href="#kontakt" class="btn-primary">Napište nám</a>
+</nav>
         </div>
     </header>
 
